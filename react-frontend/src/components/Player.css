@@ -1,0 +1,40 @@
+#cardcontainer-user {
+  position: relative;
+}
+
+#cardcontainer-oppo {
+  position: relative;
+  width: 50%;
+  max-width: 125px;
+  margin: 0 auto;
+  left: -8%;
+}
+
+span.w-33 {
+  display: inline-block;
+  width: 33%;
+}
+
+#resultgif {
+  position: absolute;
+  bottom: 0;
+}
+
+#coins-update {
+  position: absolute;
+  left: 0;
+  animation: coins-update-show 2s ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes coins-update-show {
+  from {
+    transform: translate(0, -1vh);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, -6vh);
+    opacity: 0;
+  }
+}

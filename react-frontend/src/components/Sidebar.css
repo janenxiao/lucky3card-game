@@ -1,0 +1,16 @@
+#sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  font-size: .9rem;
+}
