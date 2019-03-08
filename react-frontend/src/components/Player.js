@@ -11,8 +11,7 @@ class Player extends Component {
     revealedCount: 0,
     ante: 1,
     anteEnabled: true,
-    wager: 0,
-    wagerEnabled: false,
+    wager: 1,
     playEnabled: false,
     result: "unknown"
   };
@@ -49,7 +48,7 @@ class Player extends Component {
                 </div>
                 <div>
                   <span className="font-weight-light w-33">bet</span><span className="w-33">{this.state.wager}</span>
-                  {this.state.wagerEnabled && <button className="btn btn-warning btn-sm" onClick={this.incrementWager}>+</button>}
+                  {this.state.playEnabled && <button className="btn btn-warning btn-sm" onClick={this.incrementWager}>+</button>}
                 </div>
               </div>
             }
@@ -72,13 +71,9 @@ class Player extends Component {
   imgReveal(card) {
     if (this.props.playerData.isUser && !card.revealed) {
       const { revealedCount } = this.state;
-      // when revealing the first card, disable incrementAnte button and show incrementWager button
-      if (revealedCount == 0) {
-        this.setState({ anteEnabled: false, wagerEnabled: true });
-      }
-      // when revealing the third card, disable incrementWager button and show play and fold button
-      else if (revealedCount == 2) {
-        this.setState({ wagerEnabled: false, playEnabled: true });
+      // when revealing the third card, disable incrementAnte button, show incrementWager button and play and fold button
+      if (revealedCount == 2) {
+        this.setState({ anteEnabled: false, playEnabled: true });
       }
       this.setState({ revealedCount: revealedCount + 1 });
       this.props.onReveal(card);

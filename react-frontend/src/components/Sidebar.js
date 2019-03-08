@@ -9,9 +9,9 @@ class Sidebar extends Component {
         <div class="sidebar-sticky">
           <h6>Instructions</h6>
           <ol>
-            <li>Place ante before flipping any cards</li>
             <li>Click on any card to flip</li>
-            <li>Increase wager before flipping the last card</li>
+            <li>Place ante before flipping the last card</li>
+            <li>Place wager and play, or fold</li>
             <li>If fold, ante will be deducted</li>
             <li>If play, ante and wager will be paid or lost based on result</li>
             <li>Opponent will gain or lose the same amount</li>

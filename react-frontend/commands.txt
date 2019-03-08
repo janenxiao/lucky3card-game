@@ -1,5 +1,0 @@
-npm start // start react in browser
-npm list // view local packages
-npm list -g // view globally installed packages
-npm list | grep webpack // view specified package (in linux)
-npm list | select-string webpack // view specified package (in powershell)
