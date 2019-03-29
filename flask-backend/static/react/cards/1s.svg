@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="240" height="336" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="card" preserveAspectRatio="none">
+ <symbol id="SA" preserveAspectRatio="xMinYMid" viewBox="-500 -500 1000 1000">
+  <path d="m-270,460l160,0m-90,-10l200,-910l200,910m-90,10l160,0m-390,-330l240,0" fill="none" id="svg_1" stroke="black" stroke-linecap="square" stroke-miterlimit="1.5" stroke-width="80"/>
+ </symbol>
+ <symbol id="S" preserveAspectRatio="xMinYMid" viewBox="-600 -600 1200 1200">
+  <path d="m0,-500c100,250 355,400 355,685a150,150 0 0 1 -300,0a10,10 0 0 0 -20,0c0,200 50,215 95,315l-260,0c45,-100 95,-115 95,-315a10,10 0 0 0 -20,0a150,150 0 0 1 -300,0c0,-285 255,-435 355,-685z" id="svg_2"/>
+ </symbol>
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="white" height="335" id="svg_3" rx="12" ry="12" stroke="black" width="239" x="0.5" y="0.5"/>
+  <use height="164.8" id="svg_4" stroke="black" stroke-dasharray="100,100" stroke-linecap="round" stroke-width="100" width="164.8" x="37.6" xlink:href="#S" y="85.6"/>
+  <use height="164.8" id="svg_5" stroke="white" stroke-width="50" width="164.8" x="37.6" xlink:href="#S" y="85.6"/>
+  <use fill="black" height="164.8" id="svg_6" width="164.8" x="37.6" xlink:href="#S" y="85.6"/>
+  <use height="32" id="svg_9" width="32" x="5.6" xlink:href="#SA" y="12"/>
+  <use height="26.769" id="svg_10" width="26.769" x="8.216" xlink:href="#S" y="49"/>
+  <g id="svg_11" transform="rotate(180 120 168)">
+   <use height="32" id="svg_12" width="32" x="5.6" xlink:href="#SA" y="12"/>
+   <use height="26.769" id="svg_13" width="26.769" x="8.216" xlink:href="#S" y="49"/>
+  </g>
+ </g>
+</svg>

@@ -15,9 +15,30 @@ span.w-33 {
   width: 33%;
 }
 
-#resultgif {
+#roundResult-gif {
   position: absolute;
   bottom: 0;
+}
+
+.darksalmonred{
+  color: #ff6666;
+  text-shadow: 6px 6px 0px #ffe6e6
+}
+.greyshadow{
+  text-shadow: 6px 6px 0px #e6e6e6
+}
+
+#gameResult {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: Courier, cursive;
+  text-transform: uppercase;
+  animation: gameResult-show 800ms cubic-bezier(0.2, 1.15, 0.6, 1.38);
+  animation-iteration-count: 1;
 }
 
 #coins-update {
@@ -35,6 +56,13 @@ span.w-33 {
   }
   to {
     transform: translate(0, -6vh);
+    opacity: 0;
+  }
+}
+
+@keyframes gameResult-show {
+  0% {
+    transform: translate(0, -5vh);
     opacity: 0;
   }
 }

@@ -5,13 +5,14 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div class="col-lg-2 d-none d-lg-block bg-light" id="sidebar-wrapper">
-        <div class="sidebar-sticky">
+      <div className="col-lg-3 d-none d-lg-block bg-light" id="sidebar-wrapper">
+        <div className="sidebar-sticky">
           <h6>Instructions</h6>
           <ol>
-            <li>Click on any card to flip</li>
+            <li>Learn the rules of <span className="font-italic">Three Card Poker</span></li>
+            <li>Click on ANY of the 3 cards on the bottom to flip</li>
             <li>Place ante before flipping the last card</li>
-            <li>Place wager and play, or fold</li>
+            <li>Place wager and play, or fold. <span className="font-weight-light">Wager can't be greater than ante.</span></li>
             <li>If fold, ante will be deducted</li>
             <li>If play, ante and wager will be paid or lost based on result</li>
             <li>Opponent will gain or lose the same amount</li>

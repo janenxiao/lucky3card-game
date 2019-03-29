@@ -1,6 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files
 
-flask-backend/
-
 # dependencies
 react-frontend/node_modules/
+
+# not important
+miscellanea/
+flask-backend/__pycache__/

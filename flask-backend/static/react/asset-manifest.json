@@ -1,0 +1,16 @@
+{
+  "main.css": "static/react/css/main.c11a406e.chunk.css",
+  "main.js": "static/react/js/main.2fe3b37b.chunk.js",
+  "main.js.map": "static/react/js/main.2fe3b37b.chunk.js.map",
+  "css/1.688fd816.chunk.css": "static/react/css/1.688fd816.chunk.css",
+  "js/1.ffef1f5c.chunk.js": "static/react/js/1.ffef1f5c.chunk.js",
+  "js/1.ffef1f5c.chunk.js.map": "static/react/js/1.ffef1f5c.chunk.js.map",
+  "runtime~main.js": "static/react/js/runtime~main.e3512b05.js",
+  "runtime~main.js.map": "static/react/js/runtime~main.e3512b05.js.map",
+  "css/main.c11a406e.chunk.css.map": "static/react/css/main.c11a406e.chunk.css.map",
+  "media/iconCoins.svg": "static/react/media/iconCoins.1e91ff4b.svg",
+  "css/1.688fd816.chunk.css.map": "static/react/css/1.688fd816.chunk.css.map",
+  "../../templates/index.html": "static/react/../../templates/index.html",
+  "precache-manifest.f07871bff0ba9a2a52093fce708d7215.js": "static/react/precache-manifest.f07871bff0ba9a2a52093fce708d7215.js",
+  "service-worker.js": "static/react/service-worker.js"
+}
