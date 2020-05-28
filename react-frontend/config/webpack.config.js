@@ -151,15 +151,19 @@ module.exports = function (webpackEnv) {
       // There will be one main bundle, and one file per asynchronous chunk.
       // In development, it does not produce real files.
       filename: isEnvProduction
-        //? 'static/js/[name].[chunkhash:8].js'
+        // ? 'static/js/[name].[chunkhash:8].js'
+        // build to flask-backend
         ? 'js/[name].[chunkhash:8].js'
-        //: isEnvDevelopment && 'static/js/bundle.js',
+        // : isEnvDevelopment && 'static/js/bundle.js',
+        // build to flask-backend
         : isEnvDevelopment && 'js/bundle.js',
       // There are also additional JS chunk files if you use code splitting.
       chunkFilename: isEnvProduction
-        //? 'static/js/[name].[chunkhash:8].chunk.js'
+        // ? 'static/js/[name].[chunkhash:8].chunk.js'
+        // build to flask-backend
         ? 'js/[name].[chunkhash:8].chunk.js'
-        //: isEnvDevelopment && 'static/js/[name].chunk.js',
+        // : isEnvDevelopment && 'static/js/[name].chunk.js',
+        // build to flask-backend
         : isEnvDevelopment && 'js/[name].chunk.js',
       // We inferred the "public path" (such as / or /my-project) from homepage.
       // We use "/" in development.
@@ -325,7 +329,8 @@ module.exports = function (webpackEnv) {
               loader: require.resolve('url-loader'),
               options: {
                 limit: 10000,
-                //name: 'static/media/[name].[hash:8].[ext]',
+                // name: 'static/media/[name].[hash:8].[ext]',
+                // build to flask-backend
                 name: 'media/[name].[hash:8].[ext]',
               },
             },
@@ -464,7 +469,8 @@ module.exports = function (webpackEnv) {
               // by webpacks internal loaders.
               exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
               options: {
-                //name: 'static/media/[name].[hash:8].[ext]',
+                // name: 'static/media/[name].[hash:8].[ext]',
+                // build to flask-backend
                 name: 'media/[name].[hash:8].[ext]',
               },
             },
@@ -482,6 +488,7 @@ module.exports = function (webpackEnv) {
           {
             inject: true,
             template: paths.appHtml,
+            // build to flask-backend
             filename: "../../templates/index.html" // relative to root of the application
           },
           isEnvProduction
@@ -539,9 +546,11 @@ module.exports = function (webpackEnv) {
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        //filename: 'static/css/[name].[contenthash:8].css',
+        // filename: 'static/css/[name].[contenthash:8].css',
+        // build to flask-backend
         filename: 'css/[name].[contenthash:8].css',
-        //chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+        // chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+        // build to flask-backend
         chunkFilename: 'css/[name].[contenthash:8].chunk.css',
       }),
       // Generate a manifest file which contains a mapping of all asset filenames

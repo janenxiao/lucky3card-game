@@ -22,6 +22,7 @@ class Player extends Component {
       <div className="row" >
         <div className="col-8">
           <div style={{ maxWidth: 353 }}>
+            <h5 style={{ fontFamily: 'cursive' }}>{this.getPlayerType()}</h5>
             <div id={this.getCardContainerId()}>
               {this.props.playerData.cards.map(card => (
                 <img src={process.env.PUBLIC_URL + this.getCardImg(card)} style={this.getCardStyle(card.index)} className="img-fluid" onClick={() => this.imgReveal(card)} alt={`card${card.index}`} key={`card${card.index}`} />
@@ -110,6 +111,10 @@ class Player extends Component {
 
   getCardContainerId() {
     return "cardcontainer-" + (this.props.playerData.isUser ? "user" : "oppo");
+  }
+
+  getPlayerType() {
+    return this.props.playerData.isUser ? "You" : "Opponent";
   }
 
   incrementAnte = () => {

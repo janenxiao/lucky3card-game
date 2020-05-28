@@ -1,0 +1,47 @@
+npm install	// first time setup
+to develop just react-frontend (on localhost:3000):
+npm start
+to compile react-frontend to flask-backend (on localhost:5000):
+   search for "build to flask-backend" in following files, toggle commented line
+- paths.js (change appBuild path)
+- webpack.config.js (remove 8 "static"s, add "filename" for index.html)
+- package.json (add "homepage": "static/react",)
+npm run build	// compile to flask-backend
+python server.py	// start program (in flask-backend)
+
+node filename.js	// run js file
+curl 127.0.0.1:5000
+curl 149.248.4.73:5000/result/
+chrome://inspect/#devices	// debug with chrome devtools
+npm install ws --save-dev
+pip install -r requirements.txt
+python dependency:
+Flask
+
+todo:
+
+guide:
+[Youtube] Serving React with a Flask Backend: https://www.youtube.com/watch?v=YW8VG_U-m48
+
+git notes:
+remote
+- origin	  https://github.com/janenxiao/ECE496-map-appLayer.git
+- ccserver  https://www.myoldserver.tk/janenxiao/ece496-map-applayer.git
+git checkout <branch>// switch branch; 
+git clone// clone a repo into a newly created directory; 
+git pull// fetch from remote and merge into your local branch; 
+git pull --rebase// put everything you've changed to your local branch on top of things pulled down from remote—later you actually commit on top of the remote branch (reasonable when changes are small); 
+git status and git branch -a are helpful checkups; 
+git reflog// show reference logs of the update history of local repo; 
+git reset --hard <version>// revert to a previous version and discard all local changes; 
+git add . // stage all files (new files and deleted files) in current and subdirectories; 
+git add -u // stage all tracked files, ignoring untracked files
+git add -A // stage all files (new files and deleted files) in current and subdirectories as well as higher directories that still belong to the same git repository; 
+git fetch // download new data from a remote repository - but doesn't integrate any of this new data into your working files, so safe operation; 
+git diff --name-only origin/develop // list files in your workspace that're different from remote develop branch; 
+git diff origin/develop folder/file.java // list differences in the specific file;
+git push/create GCR in 3 steps:
+•	git add -A
+•	git commit -m "<commit message>
+•	git push origin <branch>
+vim in git: i for insert mode; <esc> to return to normal mode; :wq to save and quit

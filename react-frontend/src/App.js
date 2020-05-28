@@ -49,7 +49,7 @@ class App extends Component {
           <Sidebar />
           <div className="col col-lg-9">
             <Player playerData={this.state.oppo} />
-            <div style={{ marginTop: '20vh' }}>
+            <div style={{ marginTop: '10vh' }}>
               <Player playerData={this.state.user} onReveal={this.handleReveal} onPlay={this.handlePlay} onNewRound={this.handleNewRound} />
             </div>
           </div>

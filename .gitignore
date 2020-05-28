@@ -4,5 +4,5 @@
 react-frontend/node_modules/
 
 # not important
-miscellanea/
+#miscellanea.txt
 flask-backend/__pycache__/

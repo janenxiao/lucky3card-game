@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import './Sidebar.css';
 
 class Sidebar extends Component {
+  state = {
+    visible: true
+  };
 
   render() {
     return (
-      <div className="col-lg-3 d-none d-lg-block bg-light" id="sidebar-wrapper">
+      <div className={"col-lg-3 d-none d-lg-block bg-light" + (this.state.visible ? "" : " invisible")} id="sidebar-wrapper">
         <div className="sidebar-sticky">
+          <button className="btn btn-link btn-sm visible" type="button" onClick={this.toggleVisibility}>{this.state.visible ? "Hide" : "Show Instructions"}</button>
           <h6>Instructions</h6>
           <ol>
             <li>Learn the rules of <span className="font-italic">Three Card Poker</span></li>
@@ -30,6 +34,10 @@ class Sidebar extends Component {
         </div>
       </div>
     );
+  }
+
+  toggleVisibility = () => {
+    this.setState({ visible: !this.state.visible });
   }
 }
 
